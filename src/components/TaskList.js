@@ -56,6 +56,7 @@ render() {
                                          name ="filterName"
                                          value = {filterName}
                                          onChange = {this.onChange}
+                                         placeholder="Nhập từ khóa cần tìm kiếm"
                                          />
                                         
                                     </td>

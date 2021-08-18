@@ -81,7 +81,7 @@ render() {
                                 <input type="text" 
                                 name = 'name'
                                 className="form-control"
-                                
+                                placeholder="Nhập tên công việc"
                                 value = {this.state.name }
                                 onChange = {this.onChange}
                                  />                               
