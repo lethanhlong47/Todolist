@@ -44,3 +44,14 @@
 {
   margin-left: 5px;
 }
+.mr-5{
+  margin-right: 5px;
+}
+.text-right:hover {
+    color: red;
+}
+.text-right {
+    float: right;
+    cursor: pointer;
+    margin-bottom: 20px;
+}

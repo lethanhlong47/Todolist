@@ -68,11 +68,11 @@ render() {
   return(
            <div className="panel panel-warning">
                     <div className="panel-heading">
-                        <h3 className="panel-title">{id !== ''? 'Cập nhật ': 'Thêm Công Việc'}</h3>
+                        <h3 className="panel-title">{id !== ''? 'Cập nhật ': 'Thêm Công Việc' } 
                         <span
                             className="fa fa-times-circle text-right"
                             onClick={this.onCloseForm}
-                        ></span>
+                        ></span></h3>
                     </div>
                     <div className="panel-body">
                         <form onSubmit = {this.onSubmit} >
