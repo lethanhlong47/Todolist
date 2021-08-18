@@ -30,7 +30,7 @@ render() {
                         className= {task.status===true ? 'label label-success': 'label label-danger'}
                         
                         >
-                                    {task.status === true ? 'Kích hoạt' : 'Ẩn' }
+                                    {task.status === true ? 'Done' : 'Doing' }
                         </span>
                     </td>
                     <td className="text-center">

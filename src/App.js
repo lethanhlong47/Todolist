@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Taskform from './components/TaskForm'
-import Control from './components/Control'
 import TaskList from './components/TaskList'
 import cryptoRandomString from 'crypto-random-string';
 
@@ -139,16 +138,11 @@ class App extends Component {
     });
   }
 
-  onSearch =(keyword)=>{
-    /*this.setState({
-        keyword: keyword
-    })*/
-    console.log(keyword)
-  }
+
   
 render() {
     /*filter*/
-    var {tasks, isDisplayForm, taskEditing, filter,keyword } = this.state;
+    var {tasks, isDisplayForm, taskEditing, filter, keyword } = this.state;
     
     if (filter){
         if(filter.name){
@@ -165,13 +159,8 @@ render() {
             });
     }
 
-    /*tìm kiếm*/
-    if(keyword){
-      
-           tasks = tasks.filter((task) => {
-                return task.name.toLowerCase().indexOf(keyword) !== -1 ;
-        });
-    }
+  
+ 
     var elmTaskForm = isDisplayForm ? 
             <Taskform 
             onSubmit = {this.onSubmit}
@@ -197,10 +186,6 @@ render() {
                     <span className="fa fa-plus mr-5"></span>Thêm Công Việc
                 </button>
                  
-              {/*Search-sort*/}
-                <div className="row mt-15">
-                <Control onSearch = {this.onSearch} />
-                </div>
                     {/*Ds công việc*/}
                 <div className="row mt-15">
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-15">
@@ -209,6 +194,7 @@ render() {
                         onDelete = {this.onDelete}
                         onUpdate = {this.onUpdate}
                         onFilter = {this.onFilter}
+                       
                         />
                     </div>
                 </div>

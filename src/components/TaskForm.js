@@ -93,8 +93,8 @@ render() {
                                     name = "status" 
                                     value = {this.state.status }
                                     onChange = {this.onChange}>
-                                <option value={true}>Kích hoạt</option>
-                                <option value={false}>Ẩn</option>
+                                <option value={true}>Done</option>
+                                <option value={false}>Doing</option>
                             </select>
                             <br/>
                             <div className="text-center">

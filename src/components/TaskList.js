@@ -65,8 +65,8 @@ render() {
                                                 value= {filterStatus}
                                                  onChange = {this.onChange}>
                                             <option value="-1">Tất Cả</option>
-                                            <option value="0">Kích hoạt</option>
-                                            <option value="1">Ẩn</option>
+                                            <option value="0">Doing</option>
+                                            <option value="1">Done</option>
                                         </select>
                                     </td>
                                     <td></td>
